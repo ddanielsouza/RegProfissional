@@ -1,0 +1,11 @@
+.carregando{ 
+    width:60px; 
+    float: right;
+    top: 0px;
+    position: absolute;
+    right: 0;
+}
+
+.navbar-brand{
+    margin: 0;
+}

@@ -1,0 +1,27 @@
+Curso: Analise e Desenvolvimento de Sistemas (ADS).
+
+Disciplina: Desenvolvimento para Despositivo Mobile (DDM).
+
+Professor: Sandro Carvalho.
+
+Alunos:	Daniel Oliveira Souza
+	Matricula: 201512453
+	
+	Marcelo Almeida
+	Matricula: 201512447
+
+Data Inicio: 24-03-2017
+Data Fim: 06-04-2017
+
+Descrição Projeto: Realizar consultas de registro profissional pelo serviço oferecido pela www.consultacrm.com.br
+	obedecendo a seguinte estrutura:
+	
+	http://www.consultacrm.com.br/api/index.php?tipo=TIPO&q=BUSCA&chave=CHAVE&destino=xml
+	TIPO = profissão: crm, cro, crea, cfc, cref, oab, crp
+	BUSCA = nome do profissional ou número de registro
+	CHAVE = lulucrate455566
+	DESTINO = campo opcional, xml (padrão) ou json
+
+
+Participações: Ambos os alunos em acordo comum decidiram as ferramentas, o tema proposto e decodificaram juntos 
+	o projeto (HTML, CSS via BootStrap e JavaScript).

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data:">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <title>Consulta CRM</title>
+    </head>
+    <body class="clearfix">
+        <p style="text-align: center">header</p>
+        <div class="container-fluid">
+            <div id="corpo" class="carousel slide" data-ride="carousel" data-interval="false">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="form-group">
+                            <div class="input-group">
+                              <input id="search" type="text" class="form-control" placeholder="Nome OU N° de Registro" aria-describedby="basic-addon2" on>
+                              <span id="addonSearch" class="input-group-addon" ><span class="glyphicon glyphicon-search"></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo">Tipo: </label>
+                            <select id="tipo" class="form-control">
+                                <option value="crm">CRM</option>
+                                <option value="cro">CRO</option>
+                                <option value="crea">CREA</option>
+                                <option value="cfc">CFC</option>
+                                <option value="cref">CREF</option>
+                                <option value="oab">OAB</option>
+                                <option value="crp">CRP</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="uf">UF: </label>
+                            <select id="uf" class="form-control">
+                                <option value="">Todos UF</option>
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AM">AM</option>
+                                <option value="AP">AP</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RO">RO</option>
+                                <option value="RS">RS</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SE">SE</option>
+                                <option value="SP">SP</option>
+                                <option value="TO">TO</option>
+                            </select>
+                        </div>
+                        
+                        <button id="btnSearch" type="button" class="btn btn-primary btn-lg btn-block">Pesquisar</button>
+                        
+                    </div>
+                    <div class="item">
+                        <table  class="table table-striped">  
+                            <tbody id="tbRegistro">
+                            </tbody>
+                        </table>
+                        
+                        <button id="btnNovaConsulta" class="btn btn-primary btn-lg btn-block">Nova Consulta</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="cordova.js" ></script>
+        <script type="text/javascript" src="cordova_plugins.js"></script>
+        <script type="text/javascript" src="js/index.js" ></script>
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        
+        
+    </body>
+</html>

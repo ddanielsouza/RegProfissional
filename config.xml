@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+          xmlns:gap="http://phonegap.com/ns/1.0"
+          id="br.com.adsddm.consulta"
+          version="1.0.0">
+    <name>RegPro</name>
+    <description>
+        Consulta Registro Profissional
+    </description>
+    <author email="daniel.backspace@gmail.com" href="http://anhanguera.edu.br">
+        Daniel Oliveira Souza
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="*"/>
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <gap:platform name="android">
+        <allow-intent href="market:*" />
+		<gap:splash src="res/screen/android/splash-land-hdpi.png" density="port-hdpi"/>
+    </gap:platform>
+    <gap:platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </gap:platform>
+    <gap:platform name="windows">
+		<gap:splash src="res/screen/windows/telaAbertura.png" target="SplashScreen"/>
+		<gap:splash src="res/screen/windows/telaAbertura.png" target="SplashScreenPhone"/>
+	</gap:platform>
+    <plugin name="cordova-plugin-whitelist" spec="~1.3.2" />
+	<plugin name="cordova-plugin-splashscreen" source="npm" />
+    
+    <icon src="www/img/logoapp.png" />
+	
+    <preference name="Fullscreen" value="true" />
+    
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenWidth" value="546" />
+    <preference name="SplashScreenHeight" value="342" />
+    <preference name="SplashMaintainAspectRatio" value="false" />
+    <preference name="SplashScreenDelay" value="2000" />
+    <preference name="SplashShowOnlyFirstTime" value="false" />
+</widget>
